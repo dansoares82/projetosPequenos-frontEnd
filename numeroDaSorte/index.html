@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Sorte do Dia</title>
+	<script type="text/javascript">
+		function nSorte(){
+			var x = parseInt(document.getElementById("nSorte").value);
+			switch(x){
+				case 0:
+					document.getElementById("mensagem").innerHTML = "A felicidade vem para aqueles que lutam por ela, nunca desista";
+				break;
+				default:
+					document.getElementById("mensagem").innerHTML = "Não está com sorte hoje, precisa ter mais energia positiva na sua vida, adote um animal de estimação e seja mais feliz";
+					break;
+			}
+
+		}
+	</script>
+</head>
+<body style="background-color: grey;">
+	<h2 style="text-align:center;">Descubra qual é a frase motivacional do dia, de acordo com o seu número da sorte</h2>
+	<input type="text" name="numeroSorte" id="nSorte" placeholder="Número da Sorte" autofocus="yes" /><br><br>
+	<button onclick="nSorte()">OK</button><br><br>
+	<h4>Mensagem do dia para você:</h4>
+	<h4 style="background-color: white;" id="mensagem"></h4>
+
+
+</body>
+</html>
